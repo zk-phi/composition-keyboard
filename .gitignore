@@ -1,0 +1,5 @@
+*.zip
+gerber/
+*bak
+*.net
+*.stl
