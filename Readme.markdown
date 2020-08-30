@@ -72,7 +72,8 @@ Choc V2 は「MX 互換スイッチと同じキーキャップをはめること
 組み立てガイドではより無難な 3mm をデフォルトとしますが、興味のある方は自己責任にてチャンレンジしてみてください。
 
 # 組み立て
-## ProMicro にファームウェアを書き込んでおく
+## ProMicro の準備
+### ProMicro にファームウェアを書き込んでおく
 
 ProMicro にあらかじめファームウェアを書き込んでおきます。
 
@@ -84,7 +85,7 @@ https://github.com/zk-phi/keyboard-buildguide-common/blob/master/firmware.markdo
 make composition:phi:avrdude
 ```
 
-## ProMicro にコンスルーを実装する
+### ProMicro にコンスルーを実装しておく
 
 ProMicro を基板に連結するためのコンスルーを実装します。
 
