@@ -78,7 +78,7 @@ ProMicro にあらかじめファームウェアを書き込んでおきます�
 
 https://github.com/zk-phi/keyboard-buildguide-common/blob/master/firmware.markdown
 
-https://github.com/zk-phi/qmk_firmware に私の使っているキーマップがアップロードされています。
+[こちら](https://github.com/zk-phi/qmk_firmware) に私の使っているキーマップがアップロードされています。
 
 ```terminal
 make composition:phi:avrdude
