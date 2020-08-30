@@ -90,6 +90,8 @@ ProMicro を基板に連結するためのコンスルーを実装します。
 
 https://github.com/zk-phi/keyboard-buildguide-common/blob/master/conthrough.markdown
 
+このキーボードでは ProMicro を「部品面が内側になるように」使用します。
+
 ## 基板の歪みを矯正
 
 このキーボードは基板を直接ケースにねじ止めして一体化させる設計になっているので、基板の歪みが激しいと、最終的に完成するキーボード全体も歪んでしまうことがあります。
