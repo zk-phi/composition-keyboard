@@ -74,6 +74,10 @@ Choc V2 は「MX 互換スイッチと同じキーキャップをはめること
 # 組み立て
 ## Pro Micro にファームウェアを書き込んでおく
 
+ProMicro にあらかじめファームウェアを書き込んでおきます。
+
+https://github.com/zk-phi/keyboard-buildguide-common/blob/master/firmware.markdown
+
 https://github.com/zk-phi/qmk_firmware に私の使っているキーマップがアップロードされています。
 
 ```terminal
@@ -92,34 +96,27 @@ make composition:phi:avrdude
 
 ### ダイオードを実装
 
-ダイオードはコの字の印がカソードです。
+ダイオードを実装します。
+
+https://github.com/zk-phi/keyboard-buildguide-common/blob/master/diode.markdown
 
 表面実装部品は、ガイドの印から大きくはみ出して取り付けてしまうと「ボトムプレート上」と干渉してケースが組めなくなってしまいますので、なるべく丁寧に位置を合わせてください。
 
-実装を終えたら、ファームウェアを書き込んだ Pro Micro をコンスルーで差し込み、スイッチの穴をショートすることでキー入力ができることを確認しておきましょう。
-
 ### LED を実装 (オプション)
 
-LED はコの字の印が Vcc です。
+LED を実装します。
+
+https://github.com/zk-phi/keyboard-buildguide-common/blob/master/neopixel.markdown
 
 LED の実装順は Pro Micro 側上段のバックライト (背面実装・赤) からスタートして Z 字に降りていき、下段まで行ったらアンダーグロー (表面実装・青) で折り返すように進みます。
 
 ![led](images/led.png)
 
-ファームウェアを書き込んだ Pro Micro をコンスルーで差し込み、逐次動作確認しながら進めていくのがオススメです。
-
 ### スイッチを実装
 
-最後にスイッチを実装します。このキーボードはプレートレスの設計になっているので、トッププレートを挟まずにスイッチを半田付けしてしまって ok です。
+最後にスイッチを実装します。
 
-Choc V2 は位置決めがやや難しいため、次のような手順で実装するのがおすすめです
-
-1. ざっくり角度を決めて、マステなどで仮止めする
-2. 回路に影響ない fix ピン (一つだけ下側に生えているピン) を最初に半田付けする
-3. マステを剥がしてまっすぐついているか確認する。曲がっていたら修正する
-4. 位置が確定したら残りの２つのピンも半田付けする
-
-Pro Micro の裏にくるスイッチは、足を切っておかないと Pro Micro に干渉してしまう場合があります (個体差あり)。適宜ニッパなどで処理してください。ニッパを使用する際は切ったピンが飛んで行ってケガをしたりすることのないよう注意してください。
+https://github.com/zk-phi/keyboard-buildguide-common/blob/master/switch.markdown
 
 ### Pro Micro の仕上げ
 
